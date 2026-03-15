@@ -11,7 +11,7 @@ def create_db_new() -> DB:
 def create_channel_service() -> ChannelService:
     """Создает готовый сервис для слой хендлеров"""
     db = create_db_new()
-    sc = SheetsClient('internal/service/maxtgbottg-7720279c9ab8.json')
+    sc = SheetsClient('json')
     return ChannelService(db, sc)
 
 
